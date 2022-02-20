@@ -7,4 +7,10 @@ hours = seconds // 3600
 seconds %= 3600
 minutes = seconds // 60
 seconds %= 60
-print(f'{seconds} сек')
+if duration < 60:
+    print(f'{seconds} сек')
+if 3600 > duration > 60:
+    print(f'{minutes} мин {seconds} сек')
+if 3600 < duration < 86400:
+    print(f'{hours} час {minutes} мин {seconds} сек')
+
