@@ -7,4 +7,4 @@ hours = seconds // 3600
 seconds %= 3600
 minutes = seconds // 60
 seconds %= 60
-print('%03d:%02d:%02d:%02d' % (day, hours, minutes, seconds))
+print(f'{seconds} сек')
